@@ -1,0 +1,132 @@
+:root {
+    --main: #000;
+    --light: #fff;
+    --green: #9ece9a;
+    --darkgreen: #598061;
+    --pink: #E27396;
+    --gray: #dadada;
+}
+
+body {
+    background-color: var(--main);
+    color: var(--light);
+    font-family: Dosis, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pink)
+}
+
+a:hover {
+    color: var(--green);
+}
+
+
+h1, h2 {
+    font-family: Fraunces, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6em;
+    margin: 200px 0;
+}
+
+h2 {
+    margin-top: 4em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    color: var(--pink);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: var(--green);
+    padding: 20px;
+    margin: 0;
+    width: 375px;
+    transition: all .2s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.1);
+}
+
+article:nth-child(even){
+    background-color: var(--light);
+    color: var(--darkgreen);
+}
+
+article img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--pink);
+    transition: 1s;
+}
+button a:hover {
+    color: var(--light);
+}
+
+.tiny-thumbnails {
+    display:flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.tiny-thumbnails img {
+    width: 100px;
+}
+
+.tiny-thumbnails img:hover {
+    width: 150px;
+}
+
+iframe {
+    border: 2px solid var(--darkgreen);
+    border-radius: 5px;
+    width: 90%;
+
+}
+
+footer p {
+    text-align: center;
+    color: var(--gray);
+}
+
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 3em;
+        margin: auto;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    article:hover {
+        transform: none;
+    }
+}
