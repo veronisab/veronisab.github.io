@@ -104,13 +104,6 @@ button a:hover {
     width: 150px;
 }
 
-iframe {
-    border: 2px solid var(--darkgreen);
-    border-radius: 5px;
-    width: 90%;
-
-}
-
 footer p {
     text-align: center;
     color: var(--gray);
