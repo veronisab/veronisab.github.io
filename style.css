@@ -10,7 +10,7 @@
 body {
     background-color: var(--main);
     color: var(--light);
-    font-family: Urbanist, Helvetica, sans-serif;
+    font-family: Montserrat, Helvetica, sans-serif;
 }
 
 a {
@@ -23,12 +23,9 @@ a:hover {
 }
 
 
-h1, h2 {
+h1 {
     font-family: Fraunces, serif;
     text-align: center;
-}
-
-h1 {
     font-size: 6em;
     margin: 200px 0;
 }
@@ -36,6 +33,7 @@ h1 {
 h2 {
     margin-top: 4em;
     font-size: 2em;
+    text-align: center;
 }
 
 h3 {
@@ -54,7 +52,7 @@ section {
 }
 
 article {
-    background-color: var(--green);
+    background-color: var(--darkgreen);
     padding: 20px;
     margin: 0;
     width: 375px;
@@ -71,21 +69,35 @@ article:nth-child(even){
 }
 
 article img {
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
+.card-main-img {
+    width: 365px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+}
+
 button {
-    border: 1px solid var(--pink);
+    border: 2px solid var(--pink);
     padding: 10px;
     margin: 5px 10px;
     cursor: pointer;
-    background-color: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: var(--light);
 }
 
 button:hover{
     background-color: var(--pink);
     transition: 1s;
+    color: var(--light);
 }
 button a:hover {
     color: var(--light);
@@ -115,10 +127,6 @@ footer p {
     h1 {
         font-size: 3em;
         margin: auto;
-    }
-
-    article {
-        width: 90%;
     }
 
     article:hover {
