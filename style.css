@@ -44,8 +44,11 @@ h4 {
     color: var(--pink);
 }
 
+main {
+    max-width: 1260px;
+}
+
 section {
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: stretch;
