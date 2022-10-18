@@ -12,6 +12,7 @@ body {
     color: var(--light);
     font-family: Montserrat, Helvetica, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
